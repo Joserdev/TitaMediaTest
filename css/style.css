@@ -1,0 +1,111 @@
+:root{
+    --primary: #fc758c;
+    --fill: #fff;
+    --text: #797979;
+    --monserrat: 'Montserrat', sans-serif;
+    --questry:'Questrial', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    /*margin-right: 20px;*/
+}
+body {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    text-align: center;
+    font-family: var(--monserrat);
+}
+img {
+    height: 200px;
+    padding: 10px;
+    flex-grow: 1;
+}
+button{
+    border-radius: 0;
+    border: none;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.list-style, .buttons{
+    margin: 3rem 0; 
+}
+.list-style > button{
+    font-size: 15px;
+    color: var(--primary);
+    border: none;
+    background-color: var(--fill);
+    padding: 5px 10px;
+    outline: none;
+}
+.list-style > button:hover{
+    background-color: var(--primary);
+    color: var(--fill);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    
+}
+ 
+/*#gallery{
+    background-color: var(--fill);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}*/
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    
+}
+#list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+#gallery .first-image, #list .first-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary);
+    grid-column: span  1;
+    grid-row: span 2;
+    color: var(--fill);
+}
+#gallery img:first-child, #grid img:first-child{
+    grid-column: span  1;
+    grid-row: span 2;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    grid-column: span 1;
+  
+}
+.shwMore > button{
+    margin: 2rem 0;
+    padding: 12px 26px;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--fill);
+}
+.shwMore > button:hover{
+    background-color: var(--fill);
+    color: var(--primary);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+}

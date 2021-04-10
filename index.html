@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!--Only for font awesome icons-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src="img/page_59.png" alt="logo">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+          
+            <div class="nav-links">
+              <a href="#" class="active btn ">All</a>
+              <a href="#" class="btn ">Branding</a>
+              <a href="#" class="btn">Web</a>
+              <a href="#" class="btn ">Photography</a>
+              <a href="#" class="btn ">App</a>
+            </div>
+
+            <div class="wrapper">
+                <div class="searchbox" id="mySearch">
+                    <input type="text" class="input">
+                    <div class="searchbtn" id="mybtn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </header>
+    <main class="container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>EXPLORE BEYOND HORIZON</h1>
+                <p>Magna mundi referrentun quo, no rebum dignissism qui. <br>
+                    Per quodsi accusata id, agam labores.</p>
+                <button>VIEW OUR WORK</button>
+            </div>
+        </div>
+        <div class="list-style">
+            <button id="gridButton" onclick="event.preventDefault(); changeView();"><i class="fas fa-th-large"></i></button>
+            <button id="listButton" onclick="event.preventDefault(); changeView();"><i class="fas fa-th-list"></i></button>
+        </div>
+        <div class="buttons">
+            <ul class="menu">
+                <li class="active btn" onclick="event.preventDefault(); Request('All',event)"><a href="#">All</a></li>
+                <li class="btn" onclick="event.preventDefault(); Request('Branding',event)"> <a href="#">Branding</a>
+                </li>
+                <li class="btn" onclick="event.preventDefault(); Request('Web',event)"><a href="#">Web</a></li>
+                <li class="btn" onclick="event.preventDefault(); Request('Photograpy',event)"> <a
+                        href="#">Photography</a> </li>
+                <li class="btn" onclick="event.preventDefault(); Request('App',event)"> <a href="#">App</a></li>
+            </ul>
+        </div>
+        
+        <div id="gallery-container">
+
+        </div>
+
+        <div class="shwMore">
+            <button>Show Me More</button>
+        </div>
+
+    </main>
+    <footer>
+        <div class="rights">
+            <p>&copy; 2016 - <span>Sneak</span> All Right Reserved</p>
+        </div>
+
+        <div class="social-media">
+            <p><i class="fab fa-facebook-f"></i> &nbsp; <i class="fab fa-twitter"></i> &nbsp; <i
+                    class="fas fa-basketball-ball"></i> &nbsp; <i class="icon-google-plus"></i> &nbsp; <i
+                    class="icon-youtube"></i></p>
+        </div>
+    </footer>
+    <script src="javascript/app.js"></script>
+    <script>Request();</script>
+</body>
+
+</html>
